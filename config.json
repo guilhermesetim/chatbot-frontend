@@ -1,7 +1,9 @@
 {
-    "titulo": "Bot do tema tal",
+    "titulo": "Chat Bot",
     "subtitulo": "Esclareça suas dúvidas",
-    "cores": {
+    "servidor": "http://localhost:5000/todo/create",
+    "msg-front-end" : "Para receber mensagens de um chatbot, configure o servidor Flask com ChatterBot. Você para fazer o seu servidor e treinar o Bot seguindo esse repositório de complemento a esse projeto: https://github.com/guilhermesetim/",
+     "cores": {
       "azul": {
         "claro": "#3a7be4",
         "padrao": "#1d65d7",

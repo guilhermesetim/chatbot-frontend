@@ -9,7 +9,7 @@ export default function ChatPage() {
     // variaveis 
     const [mensagem, setMensagem] = React.useState('')
     const [listaMensagens, setListaMensagens] = React.useState([])
-    const LINK_SERVIDOR = 'http://localhost:5000/todo/create'
+    const LINK_SERVIDOR = appConfig.servidor
     const NOMEUSR = nomeUsuario()
    
 
@@ -126,8 +126,12 @@ export default function ChatPage() {
 
                                 if (e.key == 'Enter'){
                                     e.preventDefault();
+                                    /* 
+                                        Retire o comentário de requisicaoServidor(),
+                                        E comente ou retire a função novaMensagem()
+                                    */
                                     //requisicaoServidor();
-                                    novaMensagem(mensagem, "Para receber mensagens de um chatbot, configure o servidor Flask com ChatterBot. Você para fazer o seu servidor e treinar o Bot seguindo esse repositório de complemento a esse projeto: https://github.com/guilhermesetim/");
+                                    novaMensagem(mensagem, appConfig['msg-front-end']);
                                 
                                 }
                                 
@@ -154,7 +158,11 @@ export default function ChatPage() {
                         variant="secondary"
                         onClick={function(e) {
                             e.preventDefault();
-                            novaMensagem(mensagem, `Mensagem de um servidor Flask Botão`)     
+                            /* 
+                                Retire o comentário de requisicaoServidor 
+                                E comente ou retire a função novaMensagem
+                            */
+                            novaMensagem(mensagem, appConfig['msg-front-end'])     
                             //requisicaoServidor();
                         }}
                         />
