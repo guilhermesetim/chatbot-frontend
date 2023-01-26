@@ -1,10 +1,6 @@
 # Front-End de um ChatBot
 
-Link do *front-end* projeto: https://
-
 ![index](assets/index.png) ![chat](assets/chat.png)
-
-O link destina-se a apresentação do *front-end* da aplicação é necessário executar um servidor com o ChatBot instalado.
 
 
 # Sobre o projeto
@@ -47,4 +43,3 @@ No arquivo config.json é destinado a configuração de cada projeto, nos quais 
 - "subtitulo": Texto do subtítulo da página de *login* e do *header* do *chat*;
 - "servidor": Destinado a URL da API que enviará a mensagem do usuário e receberá o texto processado do ChatBot, se utilizar um servidor local Flask, por padrão o Flask utiliza a porta 5000;
 
-Também é necessário, retirar o comentário da função requisicaoServidor() [linhas 134-166], e comentar ou retirar a função novaMensagem()[linhas 133-165].

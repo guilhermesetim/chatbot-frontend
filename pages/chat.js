@@ -126,13 +126,8 @@ export default function ChatPage() {
 
                                 if (e.key == 'Enter'){
                                     e.preventDefault();
-                                    /* 
-                                        Retire o comentário de requisicaoServidor(),
-                                        E comente ou retire a função novaMensagem()
-                                    */
-                                    //requisicaoServidor();
-                                    novaMensagem(mensagem, appConfig['msg-front-end']);
-                                
+
+                                    requisicaoServidor();
                                 }
                                 
                             }}
@@ -157,13 +152,8 @@ export default function ChatPage() {
                         label=""
                         variant="secondary"
                         onClick={function(e) {
-                            e.preventDefault();
-                            /* 
-                                Retire o comentário de requisicaoServidor 
-                                E comente ou retire a função novaMensagem
-                            */
-                            novaMensagem(mensagem, appConfig['msg-front-end'])     
-                            //requisicaoServidor();
+                            e.preventDefault();    
+                            requisicaoServidor();
                         }}
                         />
             </Box>

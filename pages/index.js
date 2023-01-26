@@ -105,7 +105,7 @@ export default function HomePage() {
             onSubmit={function(e){
               e.preventDefault()
               {/* Direciona para página do ChatBot */}
-              pageChat.push("./chat")
+              pageChat.push("./chat", `./chat/${username}`)
             }}
             styleSheet={{
               display: 'flex', 
