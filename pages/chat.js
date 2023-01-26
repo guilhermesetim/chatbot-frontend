@@ -10,7 +10,8 @@ export default function ChatPage() {
     const [mensagem, setMensagem] = React.useState('')
     const [listaMensagens, setListaMensagens] = React.useState([])
     const LINK_SERVIDOR = appConfig.servidor
-    const NOMEUSR = nomeUsuario()
+    const NOMEUSR = localStorage.getItem("usuario")
+    
    
 
     function novaMensagem(mensagemUsr, mensagemBot){
@@ -126,8 +127,8 @@ export default function ChatPage() {
 
                                 if (e.key == 'Enter'){
                                     e.preventDefault();
-
-                                    requisicaoServidor();
+                                    novaMensagem(mensagem, 'json.texto');
+                                    //requisicaoServidor();
                                 }
                                 
                             }}
@@ -152,8 +153,8 @@ export default function ChatPage() {
                         label=""
                         variant="secondary"
                         onClick={function(e) {
-                            e.preventDefault();    
-                            requisicaoServidor();
+                            novaMensagem(mensagem, 'json.texto');
+                            //requisicaoServidor();
                         }}
                         />
             </Box>
