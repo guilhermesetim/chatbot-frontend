@@ -1,0 +1,23 @@
+{
+    "titulo": "Bot do tema tal",
+    "subtitulo": "Esclareça suas dúvidas",
+    "cores": {
+      "azul": {
+        "claro": "#3a7be4",
+        "padrao": "#1d65d7",
+        "escuro": "#113b7e"
+      },
+      "neutras": {
+        "A": "#FFFFFF",
+        "B": "#CBD2D9",
+        "C": "#9AA5B1",
+        "D": "#29333D",
+        "E": "#212931",
+        "F": "#181F25",
+        "G": "#101418",
+        "H": "#080A0C",
+        "I": "#313D49"
+      }
+    }
+    
+}
