@@ -127,8 +127,8 @@ export default function ChatPage() {
 
                                 if (e.key == 'Enter'){
                                     e.preventDefault();
-                                    novaMensagem(mensagem, 'json.texto');
-                                    //requisicaoServidor();
+                                    
+                                    requisicaoServidor();
                                 }
                                 
                             }}
@@ -153,8 +153,8 @@ export default function ChatPage() {
                         label=""
                         variant="secondary"
                         onClick={function(e) {
-                            novaMensagem(mensagem, 'json.texto');
-                            //requisicaoServidor();
+                            
+                            requisicaoServidor();
                         }}
                         />
             </Box>

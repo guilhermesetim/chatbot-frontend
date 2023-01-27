@@ -8,7 +8,7 @@ Trata-se de um projeto de ChatBot simples, em formato de aplicação *Web*, para
 
 A usabilidade consiste em informar usuário do GitHub para apresentar foto e o nome do usuário na interação com o ChatBot, as informações são recebidas por meio da API do GitHub. A conversa inicia com uma mensagem do usuário, em que é realizada uma requisição assíncrona ao servidor do ChatBot, pelo método POST, e retorna uma JSON com a mensagem processada pelo ChatBot.
 
-Esse repositório destina-se ao *front-end* da aplicação, o ChatBot deve ser executado juntamente com nesse repositório: https://
+Esse repositório destina-se ao *front-end* da aplicação, o ChatBot deve ser executado juntamente com nesse repositório: https://github.com/guilhermesetim/chatbot-backend
 
 ## Tecnologias utilizadas para o Front-End
 - JavaScript;
